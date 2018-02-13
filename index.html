@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- BootstrapCDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+	<title>Crystals Collector</title>
+</head>
+
+<body>
+	<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+		<!-- <header class="masthead mb-auto"> -->
+		<div class="inner">
+			<h1 id="gameTitle" class="text-center">Crystals Collector Game</h1>
+
+			<main role="main" class="inner cover">
+				<div id="firstSection">
+					<h4 class="cover-heading text-center" style="font-style:italic">HOW TO PLAY</h4>
+					<ol style="padding-right: .5em;">
+						<li>You will be given a random number at the start of the game.</li>
+						<li>Clicking on one of the four crystals below will add a specific amount of points to your score.</li>
+						<li>You win by matching your score to the random number. You lose if your score goes above the random number.</li>
+						<li>You the value of each crystal is unknown until the crystal is clicked. Upon the start of each new game the random number
+							as well as the crystal values are changed.</li>
+					</ol>
+				</div>
+				<p class="lead text-center">
+					<img src="assets/images/crystal1.jpg" class="crystalimgs"
+					 id="crystal1" alt="crystal1">
+					<img src="assets/images/crystal2.jpg"
+					 class="crystalimgs" id="crystal2" alt="crystal2">
+					<img src="assets/images/crystal3.jpg" class="crystalimgs" id="crystal3"
+					 alt="crystal3">
+					<img src="assets/images/crystal4.jpg" class="crystalimgs"
+					 id="crystal4" alt="crystal4">
+				</p>
+				<div id="numscore-border">
+					<div id="numscore-section">
+						<div class="d-inline">Random Number:
+							<span id="randomNumber">_</span>
+						</div>
+						<div class="d-inline">Your Score:
+							<span id="score">_</span>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="mastfoot mt-auto">
+				<div class="inner text-center" id="footertext">
+					<p class="d-inline">Wins:
+						<span id="wins">_</span>
+					</p>
+					<p class="d-inline">Losses:
+						<span id="losses">_</span>
+					</p>
+				</div>
+			</footer>
+		</div>
+
+
+		<!-- jQuery
+			================================================== -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
